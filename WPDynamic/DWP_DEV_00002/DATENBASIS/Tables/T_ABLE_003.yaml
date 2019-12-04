@@ -1,0 +1,30 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: DWP_DEV_00002
+      author: WPDynamic
+      changes:
+        - 
+          createTable:
+            catalogName: DATENBASIS
+            schemaName: DATENBASIS
+            tableName: T_ABLE_003
+            tablespace: USERS
+            columns:
+              - 
+                column:
+                  name: id
+                  type: int
+                  constraints:
+                      primaryKey: true
+                      nullable: false
+              - 
+                column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                      nullable: false
+              - 
+                column:
+                  name: age
+                  type: int

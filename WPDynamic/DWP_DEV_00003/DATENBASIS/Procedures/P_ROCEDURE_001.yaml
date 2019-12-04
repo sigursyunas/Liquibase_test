@@ -1,0 +1,20 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: DWP_DEV_00003
+      author: WPDynamic
+      objectQuotingStrategy: LEGACY
+      rollback: "drop procedure P_ROCEDURE_001"
+      runOnChange: true
+      changes:
+        -
+          createProcedure:
+            catalogName: DATENBASIS
+            procedureBody: |-
+              CREATE OR REPLACE PROCEDURE P_ROCEDURE_001
+                IS
+                BEGIN
+                 DBMS_OUTPUT.PUT_LINE('Hello From The Database!');
+                END;
+            procedureName: P_ROCEDURE_001
+            schemaName: DATENBASIS

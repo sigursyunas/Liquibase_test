@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - 
+    changeSet:
+      id: DWP_DEV_00002
+      author: WPDynamic
+      objectQuotingStrategy: LEGACY
+      rollback: "delete from T_ABLE_003"
+      changes:
+        -
+          loadData:
+            catalogName: DATENBASIS
+            schemaName: DATENBASIS
+            tableName: T_ABLE_003
+            columns:
+              -
+                column:
+                  name: id
+                  type: NUMERIC
+              - 
+                column:
+                  name: name
+                  type: STRING
+              - 
+                column:
+                  name: age
+                  type: NUMERIC
+            file: e:\liquibase-3.8.0-bin\Changes\WPDynamic\DWP_DEV_00002\DATENBASIS\Data\T_ABLE_003-Data.csv
+            relativeToChangelogFile: false
+            separator: ';'
+            quotchar: '"'
+            usePreparedStatements: true

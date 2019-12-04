@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - 
+    include:
+      file: e:\liquibase-3.8.0-bin\Changes\WPDynamic\DWP_DEV_00001\DATENBASIS\Tables\T_ABLE_001.yaml
+      relativeToChangeLogFile: false

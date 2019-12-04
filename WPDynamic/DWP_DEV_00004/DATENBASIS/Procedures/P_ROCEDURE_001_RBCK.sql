@@ -1,0 +1,6 @@
+CREATE OR REPLACE PROCEDURE P_ROCEDURE_001
+  IS
+  BEGIN
+   DBMS_OUTPUT.PUT_LINE('Hello From The Database!');
+  END;
+  /

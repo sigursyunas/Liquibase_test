@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - 
+    changeSet:
+      id: DWP_DEV_00003
+      author: WPDynamic
+      objectQuotingStrategy: LEGACY
+      changes:
+      - 
+        addColumn:
+          catalogName: DATENBASIS
+          columns:
+          - 
+            column:
+              name: C_OLUMN_004
+              type: varchar(5)
+          schemaName: DATENBASIS
+          tableName: T_ABLE_001

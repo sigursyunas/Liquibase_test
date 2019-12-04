@@ -1,0 +1,12 @@
+databaseChangeLog:
+    - changeSet:
+        id: DWP_DEV_00002
+        author: WPDynamic
+        objectQuotingStrategy: LEGACY
+        changes:
+            - createView:
+                catalogName: DATENBASIS
+                schemaName: DATENBASIS
+                viewName: V_IEW_003
+                encoding: UTF-8
+                selectQuery: select id, name, age from T_ABLE_003 where id > 2

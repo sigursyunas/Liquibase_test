@@ -1,0 +1,31 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: DWP_DEV_00003
+      author: WPDynamic
+      changes:
+        - 
+          createTable:
+            catalogName: DATENBASIS
+            schemaName: DATENBASIS
+            tableName: T_ABLE_004
+            tablespace: USERS
+            columns:
+              -
+                column:
+                  name: C_OLUMN_001
+                  type: number(12)
+                  constraints:
+                    nullable: false
+              -
+                column:
+                  name: C_OLUMN_002
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              -
+                column:
+                  name: C_OLUMN_003
+                  type: date
+                  constraints:
+                    nullable: true

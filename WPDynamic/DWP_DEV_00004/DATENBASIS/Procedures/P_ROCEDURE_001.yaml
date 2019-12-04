@@ -1,0 +1,22 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: DWP_DEV_00004
+      author: WPDynamic
+      objectQuotingStrategy: LEGACY
+      runOnChange: true
+      changes:
+        -
+          createProcedure:
+            catalogName: DATENBASIS
+            path: P_ROCEDURE_001.sql
+            relativeToChangelogFile: true
+            procedureName: P_ROCEDURE_001
+            schemaName: DATENBASIS
+            splitStatements: false
+      rollback:
+        -
+          sqlFile:
+            path: P_ROCEDURE_001_RBCK.sql
+            relativeToChangelogFile: true
+            splitStatements: false

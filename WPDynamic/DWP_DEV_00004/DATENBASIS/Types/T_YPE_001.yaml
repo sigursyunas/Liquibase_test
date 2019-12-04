@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - 
+    changeSet:
+      id: DWP_DEV_00004
+      author: WPDynamic
+      objectQuotingStrategy: LEGACY
+      runAlways: true
+      changes:
+        - 
+          sqlFile:
+            path: T_YPE_001.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+      rollback:
+        -
+          sqlFile:
+            path: T_YPE_001_RBCK.sql
+            relativeToChangelogFile: true

@@ -1,0 +1,1 @@
+drop type T_YPE_001;

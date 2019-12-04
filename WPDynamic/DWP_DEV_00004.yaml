@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - 
+    include:
+      file: e:\liquibase-3.8.0-bin\Changes\WPDynamic\DWP_DEV_00004\DATENBASIS\Types\T_YPE_001.yaml
+      relativeToChangeLogFile: false
+  - 
+    include:
+      file: e:\liquibase-3.8.0-bin\Changes\WPDynamic\DWP_DEV_00004\DATENBASIS\Procedures\P_ROCEDURE_001.yaml
+      relativeToChangeLogFile: false 
